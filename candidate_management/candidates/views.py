@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Candidate , private_key
+from .models import Candidate
 from .forms import CandidateForm
 from Crypto.PublicKey import RSA
 from Crypto.Random import get_random_bytes
@@ -41,7 +41,7 @@ def delete_candidate(request, pk):
         return redirect('candidate_list')
     return render(request, 'candidates/delete_candidate.html', {'candidate': candidate})
 
-def decrypt_number(self,encrypted_number1):
-         cipher = PKCS1_OAEP.new(RSA.import_key(private_key))
-         decrypted = cipher.decrypt(bytes.fromhex(encrypted_number1))
-         return decrypted.decode()
+# def decrypt_number(self,encrypted_number1):
+#          cipher = PKCS1_OAEP.new(RSA.import_key(private_key))
+#          decrypted = cipher.decrypt(bytes.fromhex(encrypted_number1))
+#          return decrypted.decode()

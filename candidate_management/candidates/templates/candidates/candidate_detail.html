@@ -14,9 +14,9 @@
       <div class="card-body">
         <h5 class="card-title"><b>{{ candidate.name }}</b></h5>
         <p class="card-text"><b>Phone Number:</b> {{ candidate.phonenumber }}</p>
-        <p class="card-text"><b>Aadhar Number:</b> {{ candidate.decryptadharnum }}</p>
-        <p class="card-text"><b>PAN Number:</b> {{ candidate.pannumber }}</p>
-        <p class="card-text"><b>Passport Number:</b> {{ candidate.passportnumber }}</p>
+        <p class="card-text"><b>Aadhar Number:</b> {{ candidate.decrypt_adharnumber }}</p>
+        <p class="card-text"><b>PAN Number:</b> {{ candidate.decrypt_pannumber }}</p>
+        <p class="card-text"><b>Passport Number:</b> {{ candidate.decrypt_passportnumber }}</p>
       </div>
       <div class="card-footer">
         <a href="{% url 'edit_candidate' candidate.pk %}" class="btn btn-primary">Edit</a>

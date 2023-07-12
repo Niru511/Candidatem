@@ -22,15 +22,15 @@
       </div>
       <div class="form-group">
         <label for="adharnumber">Aadhar Number:</label>
-        <input type="text" class="form-control" id="adharnumber" name="adharnumber" value="{{ candidate.adharnumber }}" required>
+        <input type="text" class="form-control" id="adharnumber" name="adharnumber" value="{{ candidate.decrypt_adharnumber }}" required>
       </div>
       <div class="form-group">
         <label for="pannumber">PAN Number:</label>
-        <input type="text" class="form-control" id="pannumber" name="pannumber" value="{{ candidate.pannumber }}" required>
+        <input type="text" class="form-control" id="pannumber" name="pannumber" value="{{ candidate.decrypt_pannumber }}" required>
       </div>
       <div class="form-group">
         <label for="passportnumber">Passport Number:</label>
-        <input type="text" class="form-control" id="passportnumber" name="passportnumber" value="{{ candidate.passportnumber }}" required>
+        <input type="text" class="form-control" id="passportnumber" name="passportnumber" value="{{ candidate.decrypt_passportnumber }}" required>
       </div>
       <button type="submit" class="btn btn-primary">Save Changes</button>
     </form>
